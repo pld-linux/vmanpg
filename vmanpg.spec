@@ -6,7 +6,6 @@ Release:	4
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
-
 %ifarch %{ix86} alpha ppc
 BuildRequires:	svgalib-devel
 %endif
