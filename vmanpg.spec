@@ -9,23 +9,26 @@ Group(de):	Applikationen/Grafik
 Group(pl):	Aplikacje/Grafika
 Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
 BuildRequires:	svgalib-devel
+Exclusivearch:	%{ix86} alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 vmanpg is a man pager, working in fullscreen SVGA mode.
 
 %description -l pl
-vmanpg jest przegl±dark± manuali, pracuj±c± w pe³noekranowym trybie SVGA.
+vmanpg jest przegl±dark± manuali, pracuj±c± w pe³noekranowym trybie
+SVGA.
 
 %prep
 %setup -q
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS -s}%{?debug:-O -g -s}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
 install vmanpg $RPM_BUILD_ROOT%{_bindir}
 install vman.sh $RPM_BUILD_ROOT%{_bindir}/vman
 install vmanpg.1 $RPM_BUILD_ROOT%{_mandir}/man1
