@@ -5,8 +5,6 @@ Version:	1.1
 Release:	2
 License:	GPL
 Group:		Applications/Graphics
-Group(de):	Applikationen/Grafik
-Group(pl):	Aplikacje/Grafika
 Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
 BuildRequires:	svgalib-devel
 Exclusivearch:	%{ix86} alpha
