@@ -9,7 +9,7 @@ Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
 # Source0-md5:	417fcdfccd10752ea79aee273a128830
 Source1:	%{name}-fonts.tar.bz2
 # Source1-md5:	851d1a61d70852e64c568a297de16640
-Patch0:     %{name}-Polish.patch
+Patch0:		%{name}-Polish.patch
 %ifarch %{ix86} alpha ppc
 BuildRequires:	svgalib-devel
 %endif
