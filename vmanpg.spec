@@ -1,5 +1,5 @@
 Summary:	SVGAlib pager for man pages
-Summary(pl):	Przegladarka podrecznika systemowego dla SVGAlib
+Summary(pl):	Przegl±darka podrêcznika systemowego dla SVGAlib
 Name:		vmanpg
 Version:	1.1
 Release:	2
@@ -23,7 +23,7 @@ SVGA.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS -s}%{?debug:-O0 -g -s}"
+%{__make} CFLAGS="%{rpmcflags} %{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
