@@ -2,7 +2,7 @@ Summary:	SVGAlib pager for man pages
 Summary(pl):	Przegladarka podrecznika systemowego dla SVGAlib
 Name:		vmanpg
 Version:	1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Graphics
 Group(de):	Applikationen/Grafik
@@ -34,8 +34,7 @@ install vman.sh $RPM_BUILD_ROOT%{_bindir}/vman
 install vmanpg.1 $RPM_BUILD_ROOT%{_mandir}/man1
 echo ".so vmanpg.1" > $RPM_BUILD_ROOT%{_mandir}/man1/vman.1
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README ChangeLog
+gzip -9nf README ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
