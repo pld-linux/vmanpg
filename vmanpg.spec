@@ -23,7 +23,7 @@ SVGA.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS -s}%{?debug:-O -g -s}"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS -s}%{?debug:-O0 -g -s}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
