@@ -10,7 +10,7 @@ Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
 BuildRequires:	svgalib-devel
 %endif
 %ifarch ppc
-BuildRequires:  svgalib4ggi-devel
+BuildRequires:	svgalib4ggi-devel
 %endif
 Exclusivearch:	%{ix86} alpha ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
