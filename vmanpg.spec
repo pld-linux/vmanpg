@@ -2,7 +2,7 @@ Summary:	SVGAlib pager for man pages
 Summary(pl):	Przegl±darka podrêcznika systemowego dla SVGAlib
 Name:		vmanpg
 Version:	1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
