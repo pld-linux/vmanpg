@@ -2,10 +2,12 @@ Summary:	SVGAlib pager for man pages
 Summary(pl):	Przegl±darka podrêcznika systemowego dla SVGAlib
 Name:		vmanpg
 Version:	1.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.svgalib.org/rus/vmanpg/%{name}-%{version}.tar.gz
+Source1:	%{name}-fonts.tar.bz2
+Patch0:     %{name}-Polish.patch
 %ifarch %{ix86} alpha ppc
 BuildRequires:	svgalib-devel
 %endif
@@ -23,7 +25,8 @@ vmanpg jest przegl±dark± manuali, pracuj±c± w pe³noekranowym trybie
 SVGA.
 
 %prep
-%setup -q
+%setup -q -a1
+%patch -p1
 
 %build
 %{__make} CFLAGS="%{rpmcflags} %{rpmldflags}"
