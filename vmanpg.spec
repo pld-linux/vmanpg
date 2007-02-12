@@ -1,5 +1,5 @@
 Summary:	SVGAlib pager for man pages
-Summary(pl):	Przegl±darka podrêcznika systemowego dla SVGAlib
+Summary(pl.UTF-8):   PrzeglÄ…darka podrÄ™cznika systemowego dla SVGAlib
 Name:		vmanpg
 Version:	1.1
 Release:	5
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 vmanpg is a man pager, working in fullscreen SVGA mode.
 
-%description -l pl
-vmanpg jest przegl±dark± manuali, pracuj±c± w pe³noekranowym trybie
+%description -l pl.UTF-8
+vmanpg jest przeglÄ…darkÄ… manuali, pracujÄ…cÄ… w peÅ‚noekranowym trybie
 SVGA.
 
 %prep
