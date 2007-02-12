@@ -1,5 +1,5 @@
 Summary:	SVGAlib pager for man pages
-Summary(pl.UTF-8):   Przeglądarka podręcznika systemowego dla SVGAlib
+Summary(pl.UTF-8):	Przeglądarka podręcznika systemowego dla SVGAlib
 Name:		vmanpg
 Version:	1.1
 Release:	5
